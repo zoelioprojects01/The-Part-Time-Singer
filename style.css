@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#nowPlaying {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.equalizer {
+  color: #00ffcc;
+  animation: bounce 1s infinite ease-in-out;
+  font-size: 1.5rem;
+}
+
+#songList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#songList li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#songList li:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+#songList i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+audio {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
