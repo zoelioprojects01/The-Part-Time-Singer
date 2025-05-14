@@ -7,7 +7,7 @@ const songs = [
   "Teri har ek baat mein kuch khaas hai.mp3",
   "Tujhse Mila To Jana Mai.mp3",
   "Aaj ki rat akhiri hai shayd.mp3",
-  "Jinna ne chhode si raaste.mp3",
+  "Jinna ne chhode si raaste (Punjabi).mp3",
   "Jinho ne chore the raste (Hindi).mp3"
 ];
 
