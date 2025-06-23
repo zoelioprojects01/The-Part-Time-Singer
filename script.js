@@ -10,7 +10,8 @@ const songs = [
   "Jinna ne chhode si raaste.mp3",
   "Jinho ne chore the raste (Hindi).mp3",
   "Tu jaha ajj hai main wahaan ab nahi.mp3",
-  "Khwabo ka bojh tha 2.mp3"
+  "Khwabo ka bojh tha 2.mp3",
+  "Chup si raho me mai khud se mila.mp3"
 ];
 
 const songList = document.getElementById('songList');
